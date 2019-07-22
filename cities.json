@@ -1,0 +1,208 @@
+[{
+    "address": {
+        "city": "Tel Aviv",
+        "country": "Israel"
+    },
+    "coords": {
+        "lat": 32.109333,
+        "lng": 34.855499
+    }
+}, {
+    "address": {
+        "city": "Tokyo",
+        "country": "Japan"
+    },
+    "coords": {
+        "lat": 35.652832,
+        "lng": 139.839478
+    }
+}, {
+    "address": {
+        "city": "NYC",
+        "country": "New York"
+    },
+    "coords": {
+        "lat": 40.73061,
+        "lng": -73.935242
+    }
+}, {
+    "address": {
+        "city": "Bangkok",
+        "country": "Thailand"
+    },
+    "coords": {
+        "lat": 13.756331,
+        "lng": 100.501762
+    }
+}, {
+    "address": {
+        "city": "San Sebastián",
+        "country": "Spain"
+    },
+    "coords": {
+        "lat": 43.3209,
+        "lng": -1.98452
+    }
+}, {
+    "address": {
+        "city": "Dubai",
+        "country": "United Arab Emirates"
+    },
+    "coords": {
+        "lat": 25.204849,
+        "lng": 55.270782
+    }
+}, {
+    "address": {
+        "city": "London",
+        "country": "United Kingdom"
+    },
+    "coords": {
+        "lat": 51.507351,
+        "lng": -0.127758
+    }
+}, {
+    "address": {
+        "city": "Paris",
+        "country": "France"
+    },
+    "coords": {
+        "lat": 48.856613,
+        "lng": 2.352222
+    }
+}, {
+    "address": {
+        "city": "Honolulu",
+        "country": "Hawaii"
+    },
+    "coords": {
+        "lat": 21.306944,
+        "lng": -157.858337
+    }
+}, {
+    "address": {
+        "city": "Singapore ",
+        "country": "Southeast Asia"
+    },
+    "coords": {
+        "lat": 1.352083,
+        "lng": 103.819839
+    }
+}, {
+    "address": {
+        "city": "Mumbai",
+        "country": "India"
+    },
+    "coords": {
+        "lat": 19.009809,
+        "lng": 72.866287
+    }
+}, {
+    "address": {
+        "city": "Athens",
+        "country": "Greece"
+    },
+    "coords": {
+        "lat": 37.98381,
+        "lng": 23.727539
+    }
+}, {
+    "address": {
+        "city": "Istanbul",
+        "country": "Turkey"
+    },
+    "coords": {
+        "lat": 41.00824,
+        "lng": 28.978359
+    }
+}, {
+    "address": {
+        "city": "Seoul",
+        "country": "South Korea"
+    },
+    "coords": {
+        "lat": 37.566536,
+        "lng": 126.977966
+    }
+}, {
+    "address": {
+        "city": "Chicago",
+        "country": "Illinois"
+    },
+    "coords": {
+        "lat": 41.878113,
+        "lng": -87.629799
+    }
+}, {
+    "address": {
+        "city": "Las Vegas",
+        "country": "Nevada"
+    },
+    "coords": {
+        "lat": 36.169941,
+        "lng": -115.139832
+    }
+}, {
+    "address": {
+        "city": "San Francisco",
+        "country": "California"
+    },
+    "coords": {
+        "lat": 37.774929,
+        "lng": -122.419418
+    }
+}, {
+    "address": {
+        "city": "Washington",
+        "country": "D.C."
+    },
+    "coords": {
+        "lat": 38.907192,
+        "lng": -77.036873
+    }
+}, {
+    "address": {
+        "city": "San Francisco",
+        "country": "California"
+    },
+    "coords": {
+        "lat": 29.951065,
+        "lng": -90.071533
+    }
+}, {
+    "address": {
+        "city": "Orlando",
+        "country": "Florida"
+    },
+    "coords": {
+        "lat": 28.538336,
+        "lng": -81.379234
+    }
+}, {
+    "address": {
+        "city": "Oslo",
+        "country": "Norway"
+    },
+    "coords": {
+        "lat": 59.913868,
+        "lng": 10.752245
+    }
+}, {
+    "address": {
+        "city": "Rome",
+        "country": "Italy"
+    },
+    "coords": {
+        "lat": 41.902782,
+        "lng": 12.496365
+    }
+}, {
+    "address": {
+        "city": "Zurich",
+        "country": "Switzerland"
+    },
+    "coords": {
+        "lat": 47.369019,
+        "lng": 8.53803
+    }
+}]

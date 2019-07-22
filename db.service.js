@@ -1,0 +1,39 @@
+
+const MongoClient = require('mongodb').MongoClient;
+const config  =  require('./config')
+
+// Database Name
+const dbName = 'MEETRAVEL';
+
+var dbConn = null;
+
+async function connect() {
+    if (dbConn) return dbConn;
+    try {
+        console.log('created connection');
+        const client = await MongoClient.connect(config.dbURL, {useNewUrlParser: true});
+        const db = client.db(dbName);
+        dbConn = db;
+        console.log('im dbConn at connect', dbConn);
+        return db;
+    } catch(err) {
+        console.log('Cannot Connect to DB', err)
+        throw err;
+    }
+}
+
+async function getCollection(collectionName) {
+    // const db = await connect()
+    return dbConn.collection(collectionName);
+}
+
+async function closeConnection() {
+    console.log('im dbConn at close', dbConn);
+    dbConn.close();
+}
+
+module.exports = {
+    connect,
+    getCollection,
+    closeConnection
+}
