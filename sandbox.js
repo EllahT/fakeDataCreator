@@ -13,64 +13,62 @@ const tempArray = [];
 let allUsers = _createAllUsers();
 
 //add password (hashed) and username, add location: {lat: lng: }, add profileImg based on gender
+
 //adding users fron tempArray and from DB to file
-// tempArray.forEach(user => {
-//     allUsers.push(user);
-//     console.log(allUsers.length);
-//     _saveToFile()
-//     .then(() => {
+// (async ()=> {
+//     tempArray.forEach(user => {
+//         allUsers.push(user);
+//         console.log(allUsers.length);
+//         await _saveToFile();
 //         console.log('done');
 //     })
-// })
+// })();
 
-// UserService.query()
-// .then(users => {
+// (async ()=> {
+//     const users = await UserService.query();
 //     users.forEach(user => {
 //         allUsers.push(user);
 //         console.log(allUsers.length);
-//         _saveToFile()
-//         .then(() => {
-//             console.log('done');
-//         })
+//         await _saveToFile();
+//         console.log('done');    
 //     })
-// })
+// })();
 
 
 // adding hashed password and username to each user
-// allUsers.forEach((user, index) => {
-//     let password = user.name.first.toLocaleLowerCase()+user.name.last.toLowerCase();
-//     let username = user.name.first+user.name.last;
-//     bcrypt.hash(password, saltRounds)
-//     .then(hash => {
+// (async ()=> {
+//     allUsers.forEach((user, index) => {
+//         let password = user.name.first.toLocaleLowerCase()+user.name.last.toLowerCase();
+//         let username = user.name.first+user.name.last;
+//         const hash = await bcrypt.hash(password, saltRounds);
 //         user.password = hash;
 //         user.username = username;
 //         if (user._id) delete user._id;
-//         _saveToFile()
-//             .then(() => {
-//                 console.log('done');
-//             })
-//     })
-// })
-
-//adding randomlocation based on cities
-// allUsers.forEach((user, index) => {
-//     let idx = UtilService.getRandomInt(0, cities.length-1);
-//     let randGeo = UtilService.getRandomGeo(cities[idx].coords, 5000);
-//     user.location = randGeo;
-//     _saveToFile()
-//     .then(() => {
+//         await _saveToFile();
 //         console.log('done');
 //     })
-// }) 
+// })();
+
+//adding randomlocation based on cities
+// (async ()=> {
+//     allUsers.forEach((user, index) => {
+//         let idx = UtilService.getRandomInt(0, cities.length-1);
+//         let randGeo = UtilService.getRandomGeo(cities[idx].coords, 5000);
+//         user.location = randGeo;
+//         await _saveToFile();
+//         console.log('done');
+//     })     
+// })();
 
 //add profileImg based on gender
-// allUsers.forEach(user => {
-//     ImageService.getRandomImage(user.gender)
-//     .then(imgSrc => {
+// (async ()=> {
+//     allUsers.forEach(user => {
+//         const imgSrc = await ImageService.getRandomImage(user.gender);
 //         user.profileImg = imgSrc;
-//         _saveToFile()
-//     })
-// })
+//         await _saveToFile();
+//         console.log('done');
+//     })    
+// })();
 
 
 //checking if all users have profileImg
@@ -81,35 +79,34 @@ let allUsers = _createAllUsers();
 // console.log(counter);
 
 //fix cities to be address: {city, country}
-// cities.forEach(place => {
-//     let addressArr = place.address. split(', ');
-//     place.address = {city: addressArr[0], country: addressArr[1]};
-//     console.log(place);
-//     _saveCitiesToFile()
-//     .then(() => {
+// (async ()=> {
+//     cities.forEach(place => {
+//         let addressArr = place.address. split(', ');
+//         place.address = {city: addressArr[0], country: addressArr[1]};
+//         console.log(place);
+//         await _saveCitiesToFile();
 //         console.log('done');
 //     })
-// })
-
+// })();
 
 //change residance for users, based on cities
-// allUsers.forEach(user => {
-//     let idx = UtilService.getRandomInt(0, cities.length-1);
-//     user.residance = cities[idx].address;
-//     _saveToFile()
-//     .then(() => {
+// (async ()=> {
+//     allUsers.forEach(user => {
+//         let idx = UtilService.getRandomInt(0, cities.length-1);
+//         user.residance = cities[idx].address;
+//         await _saveToFile();
 //         console.log('done');
-//     })
-// })
+//     })    
+// })();
 
 // adding users to DB
-// dbService.connect()
-// .then(() => {
+// (async ()=> {
+//     await dbService.connect();
 //     allUsers.forEach((user, index) => {
-//         UserService.add(user)
+//         await UserService.add(user);
 //         console.log(index)
 //     })
-// })
+// })();
 
 function _saveToFile() {
     return new Promise((resolve, reject) => {
